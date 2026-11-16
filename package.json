@@ -1,0 +1,15 @@
+{
+  "name": "template-prod-html",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "img": "node scripts/optimize-image.js",
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./css/style.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "sharp": "^0.35.3"
+  }
+}

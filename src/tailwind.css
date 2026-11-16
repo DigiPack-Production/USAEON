@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* 字體 */
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+
+  /*
+   * 語意色 token 範例。
+   * 命名依「用途」而非色相（brand-orange 而非 orange-600），index.html 以 bg-brand-orange 引用。
+   * 新增色彩時在此加 --color-* 並註明驗證過的對比情境：
+   * brand-orange 搭配白字約 4.8:1，可用於一般文字；反過來當文字放在白底上亦可。
+   */
+  --color-brand-orange: #c0501f;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
